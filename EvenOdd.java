@@ -1,4 +1,7 @@
 package evenodd;
+
+import java.util.Scanner;
+
 /**
  *
  * @author ocampog4446
@@ -6,7 +9,12 @@ package evenodd;
 
 public class EvenOdd {
     public static void main(String[] args) {
-    int number = 45;
+    
+    Scanner input = new Scanner( System.in );
+    
+    System.out.print( "Enter an integer: " ); // prompt for input
+    int number = input.nextInt(); 
+
 
     if(number%2==0)
         {
