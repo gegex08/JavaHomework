@@ -2,24 +2,27 @@
  * Programmer: Geneiva Ocampo
  * Course CSCI 1471
  * Date 01/24/2024
- * Assignment: Homework #1: Problem 2
+ * Assignment: Homework #1: Addition
  * Environment Java with Netbeans
  * Files Included: JavaApplication2
- * Purpose: Find the letter Grade
- * Input: Integer between 1-100
- * Preconditions/ Assumptions: All numbers have the same value
- * Equations: 
- * Output: Letter Grade
+ * Purpose: Add two integers
+ * Input: Integers
+ * Preconditions/ Assumptions: All numbers are whole numbers
+ * Equations: sum = number1 + number2;
+ * Output: total/sum
  * Postconditions/Assumptions: Type of Integer Variable 
- * Contraints: Scale
- * Algorithm: 
+ * Contraints: Numbers
+ * Algorithm: input number, input second number, add the two values, output sum total of both values
  * Prompt User to enter a number 
- * Calculate number to match letter grade
- * Output letter grade
+ * Prompt User to enter a second number 
+ * Calculate the sum total of both numbers
+ * Output the total sum
  ****************************************************/
 //*********** Addition ***********
 // Fig. 2.7: Addition.java
 // Addition program that displays the sum of two numbers.
+package addition;
+
 import java.util.Scanner; // program uses class Scanner
 public class Addition
 {
