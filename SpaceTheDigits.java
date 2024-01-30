@@ -17,7 +17,7 @@ package spacethedigits;
  * Algorithm: 
  * Prompt user to enter a 5 digit number
  * After each number in between insert a space by the following:
- * Divide the number by a 10000 
+ * Divide the first number by a 10000 then 
  * 
  * 
  ****************************************************/
@@ -53,7 +53,7 @@ public class SpaceTheDigits {
         int digit5 = number;// breaks apart numbers
         
         //use the %d to print the assignd value to that decimal 
-        System.out.printf("%d %d %d %d %d \n", digit1, digit2, digit3, digit4, digit5); // will get the first number next to the decimal
+        System.out.printf("%d %d %d %d %d \n", digit1, digit2, digit3, digit4, digit5); // will get the first interger before the decimal
         
         
         
