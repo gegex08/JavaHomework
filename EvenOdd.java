@@ -39,7 +39,7 @@ public class EvenOdd {
         //then the system will print number is even
         if(number % 2 == 0)
         {
-            System.out.println("Number is Even");
+            System.out.printf("%s %d %s\n","The number", number, "is Even.");// string integer string
         }
 
         //If statement to determine that if input is divided by 2 and 
@@ -47,7 +47,7 @@ public class EvenOdd {
         //then the system will print number is even
         if(number % 2 == 1)
         {
-            System.out.println("Number is Odd");
+            System.out.printf("%s %d %s\n", "The number", number, "is Odd.");
         }
     
     }
