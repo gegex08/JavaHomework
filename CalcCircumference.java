@@ -19,8 +19,8 @@ import java.util.Scanner;
 `* Diameter is 6
 `* Area is 28.274334
 `* Circumference is 18.849556
- * Postconditions/Assumptions: Type of Integer Variable 
- * Contraints: negative numbers 
+ * Postconditions/Assumptions: Data Type of Double Variables 
+ * Contraints: variable data type is double
  * Algorithm: 
  * Prompt user to input number for the radius
  * Calculate and output diameter, area, and circumference
@@ -41,12 +41,11 @@ public class CalcCircumference {
         
         //Declares input and variables as double data types to give broader range
         double radius = input.nextInt();
-        double d = 2;
-        
+
         //prints diameter
-        System.out.printf("Diameter is %.0f\n", (radius * d));
+        System.out.printf("Diameter is %.0f\n", (radius * 2));
         //prints circumference formatted with 6 digits after the decimal
-        System.out.printf("Circumference is %.6f\n", (Math.PI * radius * d));
+        System.out.printf("Circumference is %.6f\n", (Math.PI * radius * 2));
         //prints area with 6 digit after decimal point
         System.out.printf("Area is %.6f\n", Math.PI * radius * radius);
 
