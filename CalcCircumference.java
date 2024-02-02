@@ -40,14 +40,14 @@ public class CalcCircumference {
         System.out.print( "Enter the radius of the circle: " );
         
         //Declares input and variables as double data types to give broader range
-        double radius = input.nextInt();
+        float radius = input.nextInt();
 
         //prints diameter
         System.out.printf("Diameter is %.0f\n", (radius * 2));
         //prints circumference formatted with 6 digits after the decimal
         System.out.printf("Circumference is %.6f\n", (Math.PI * radius * 2));
         //prints area with 6 digit after decimal point
-        System.out.printf("Area is %.6f\n", Math.PI * radius * radius);
+        System.out.printf("Area is %.6f\n", Math.PI * Math.pow(radius, 2));
 
     }
     
