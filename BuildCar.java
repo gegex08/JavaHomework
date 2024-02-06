@@ -6,26 +6,22 @@ package buildcar;
  */
 public class BuildCar {
 
-    public static void main(String[] args) {
-        // TODO code application logic here
-        private int Speed = 0;
-        private int Odometer = 0;
-        private int Direction = 0; 
-        private int Fuel_gauge = 0;
-        
-    }
+   {
     public static void main(String[] args)
     {
-    public void testCar1(){
-        System.out.println("Status at Finish");
-        System.out.println("");
-        System.out.println("Speed = " Speed);
-        System.out.println("");
-        System.out.println("Fuel = " Fuel);
-        System.out.println("");
-        System.out.println("Direction = " Direction);
-        System.out.println("");
-        System.out.println("Odometer = " Odometer);
-        System.out.println("I traveled" Speed/Fuel_gauge "and used" Odometer "gallons of fuel."); 
-    }
+    // Create two different
+    // Bicycle objects
+    MyCarApp TestCar1 = new BuildCar();
+    MyCarApp TestCar2 = new BuildCar();
+    
+    // Invoke methods on those objects
+    TestCar1.changeCadence(50);
+    TestCar1.speedUp(50);
+    TestCar1.speedDown(10);
+    TestCar1.speedUp(10);
+    TestCar1.changeGear(2);
+    TestCar1.printStates();
+
+    }// end main
+   }
 }
