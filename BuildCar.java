@@ -1,7 +1,7 @@
 
 package mycarapp;
 
-/**
+/** Direction, add test car 1, and miles 
  *
  * @author geneivaocampo
  */
@@ -47,6 +47,7 @@ public class BuildCar {
         System.out.println("Direction = " + Direction +"\n");
         System.out.println("Odometer = " + Odometer +"\n");
         System.out.printf("%s %d %s %.2f %s" , "I traveled " , Odometer , " and used " , Odometer/20.00 , " gallons of fuel\n");
+        System.out.println("");
     }
 }
 
