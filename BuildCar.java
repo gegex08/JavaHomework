@@ -13,22 +13,24 @@ public class BuildCar {
     private int Fuel_gauge = 0;
         
     public void hitGas(int accelerate){
-        System.out.println("Speed increased by " + accelerate + " mph");
+        System.out.println("Speed increased by " + accelerate + " mph.");
+        Speed = Speed + accelerate;
     }
     public void hitBreak(int decrement){
-        System.out.println("Speed decreased by " + decrement + " mph");
+        System.out.println("Speed decreased by " + decrement + " mph.");
+        Speed = Speed - decrement;
     }
     public void changeDirection(int increment){
-        System.out.println("I added " + Direction + " more miles to the trip");
+
+        System.out.println("I just turned " + increment + " degrees.");
     }
     public void addMiles(int miles){
-        System.out.println("I added " + miles + " more miles to the trip");
+        System.out.println("I added " + miles + " more miles to the trip.");
     }
-    public void checkFuel_gauge(int miles){
-        Fuel_gauge = miles / 20;
-        System.out.println("I traveled" + Fuel_gauge + "and used" + Odometer + "gallons of fuel.");  
+    public void checkFuel_gauge(int gas){
+        System.out.println("Just added " + gas + " gallons of fuel.");  
     }
-    public void testCar(){
+    public void startTest(){
     System.out.println("Status at Start");
     System.out.println("");
     System.out.println("Speed = 0");
@@ -39,6 +41,9 @@ public class BuildCar {
     System.out.println("");
     System.out.println("Odometer = 0");
         
+    }
+    public void endTest(){
+        System.out.println(Speed);
     }
 }
 
