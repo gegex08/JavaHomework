@@ -1,4 +1,5 @@
-package buildcar;
+
+package mycarapp;
 
 /**
  *
@@ -6,22 +7,38 @@ package buildcar;
  */
 public class BuildCar {
 
-   {
-    public static void main(String[] args)
-    {
-    // Create two different
-    // Bicycle objects
-    MyCarApp TestCar1 = new BuildCar();
-    MyCarApp TestCar2 = new BuildCar();
-    
-    // Invoke methods on those objects
-    TestCar1.changeCadence(50);
-    TestCar1.speedUp(50);
-    TestCar1.speedDown(10);
-    TestCar1.speedUp(10);
-    TestCar1.changeGear(2);
-    TestCar1.printStates();
-
-    }// end main
-   }
+    private int Speed = 0;
+    private int Odometer = 0;
+    private int Direction = 0; 
+    private int Fuel_gauge = 0;
+        
+    public void hitGas(int accelerate){
+        System.out.println("Speed increased by " + accelerate + " mph");
+    }
+    public void hitBreak(int decrement){
+        System.out.println("Speed decreased by " + decrement + " mph");
+    }
+    public void changeDirection(int increment){
+        System.out.println("I added " + Direction + " more miles to the trip");
+    }
+    public void addMiles(int miles){
+        System.out.println("I added " + miles + " more miles to the trip");
+    }
+    public void checkFuel_gauge(int miles){
+        Fuel_gauge = miles / 20;
+        System.out.println("I traveled" + Fuel_gauge + "and used" + Odometer + "gallons of fuel.");  
+    }
+    public void testCar(){
+    System.out.println("Status at Start");
+    System.out.println("");
+    System.out.println("Speed = 0");
+    System.out.println("");
+    System.out.println("Fuel = 0");
+    System.out.println("");
+    System.out.println("Direction = 0");
+    System.out.println("");
+    System.out.println("Odometer = 0");
+        
+    }
 }
+
