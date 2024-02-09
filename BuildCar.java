@@ -20,9 +20,15 @@ public class BuildCar {
         System.out.println("Speed decreased by " + decrement + " mph.\n");
         Speed = Speed - decrement;
     }
-    public void changeDirection(int increment){
-        System.out.println("I just turned " + increment + " degrees.\n");
-        Direction = Direction + increment;
+    public void changeDirection(int degrees){
+        if (degrees <= 0){
+        System.out.println("I just turned left " + -1*degrees + " degrees.\n");
+        Direction = Direction - degrees;
+        }
+        if (degrees >= 0){
+        System.out.println("I just turned right " + degrees + " degrees.\n");
+        Direction = Direction + degrees;
+        }
     }
     public void addMiles(int miles){
         System.out.println("I added " + miles + " more miles to the trip.\n");
@@ -50,4 +56,3 @@ public class BuildCar {
         System.out.println("");
     }
 }
-
